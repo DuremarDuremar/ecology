@@ -1,8 +1,14 @@
 import React from "react";
 import { Content } from "./style";
+import { Main, Nav } from "../../components";
 
 const Catalog = () => {
-  return <Content>Catalog</Content>;
+  return (
+    <>
+      <Main />
+      <Nav />
+    </>
+  );
 };
 
 export default Catalog;

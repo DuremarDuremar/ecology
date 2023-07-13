@@ -2,7 +2,7 @@ import React from "react";
 import { Content } from "./style";
 
 const Main = () => {
-  return <div>Main</div>;
+  return <Content>Main</Content>;
 };
 
 export default Main;
