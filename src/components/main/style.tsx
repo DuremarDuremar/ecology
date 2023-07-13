@@ -2,5 +2,5 @@ import styled from "styled-components";
 
 export const Content = styled.section`
   grid-area: m;
-  background-color: green;
+  background-color: #2b3244;
 `;

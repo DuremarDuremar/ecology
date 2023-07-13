@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Content>
       <div>
-        <h1>Дивия</h1>
+        <h1>эко-агенство Дивия</h1>
       </div>
       <div>
         <p>123455666</p>

@@ -2,5 +2,5 @@ import styled from "styled-components";
 
 export const Content = styled.header`
   grid-area: h;
-  background-color: #948e99;
+  background-color: #e1e2db;
 `;
