@@ -6,11 +6,11 @@ export const Content = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 17px;
+  padding: 1.1vw;
 
   div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   h1,
   h3 {
@@ -22,6 +22,21 @@ export const Content = styled.header`
     font-size: 60px;
     line-height: 110%;
   }
+
+  h1 {
+    position: relative;
+    :after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: #7490c7;
+      max-width: 300px;
+      height: 2px;
+      width: 100%;
+      left: 10%;
+    }
+  }
+
   a {
     padding-top: 15px;
   }

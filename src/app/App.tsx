@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
-import { Price, Catalog, About } from "../pages";
-import { Main, Nav } from "../components";
+import arrayCategory from "../data/catigory";
+import { Main, Nav, Slider } from "../components";
 import { Content, Global } from "./style";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
               element={
                 <>
                   <Nav />
-                  <Main />
+                  <Main content={<Slider data={arrayCategory} />} />
                 </>
               }
             />

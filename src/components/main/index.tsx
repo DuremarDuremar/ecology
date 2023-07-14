@@ -1,8 +1,16 @@
-import React from "react";
-import { Content } from "./style";
+import React, { FC } from "react";
+import { Content, Wrapper } from "./style";
 
-const Main = () => {
-  return <Content>Main</Content>;
+interface IProps {
+  content?: JSX.Element;
+}
+
+const Main: FC<IProps> = ({ content }) => {
+  return (
+    <Content>
+      <Wrapper>{content}</Wrapper>
+    </Content>
+  );
 };
 
 export default Main;
