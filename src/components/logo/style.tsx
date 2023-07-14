@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.section`
   grid-area: l;
-  background-color: #90a5ce;
+  background-color: #e1e2db;
 
   div {
     max-width: 500px;

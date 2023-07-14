@@ -56,11 +56,20 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
+h1,h2,h3,h4,h5,h6{
+  color: inherit;
+  font-weight: inherit;
+  font-size:inherit;
+}
 `;
 
 export const Content = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: 0px auto;
-  box-sizing: content-box;
+  padding: 0 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #e1e2db;
+  color: #2b3244;
 `;

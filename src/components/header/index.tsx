@@ -4,11 +4,12 @@ import { Content } from "./style";
 const Header = () => {
   return (
     <Content>
+      <h1>
+        эко-агенство <strong>Дивия</strong>
+      </h1>
+
       <div>
-        <h1>эко-агенство Дивия</h1>
-      </div>
-      <div>
-        <p>123455666</p>
+        <a href="tel:+6494461709">+7 6494461709</a>
         <h3>честность, результат & экологичность</h3>
       </div>
     </Content>
