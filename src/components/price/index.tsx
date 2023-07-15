@@ -1,5 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import sortBy from "lodash.sortby";
+import { Content } from "./style";
 
 interface IItem {
   name: string;
@@ -17,19 +18,20 @@ const Price: FC<IProps> = ({ data }) => {
 
   useEffect(() => {
     setItems(sortBy(data, ["name"]));
-  }, []);
+  }, [data]);
 
   return (
-    <ul>
+    <Content>
       {items.map((item, index) => {
         return (
           <li key={index}>
             <h5>{item.name}</h5>
+
             <h6>{item.price}</h6>
           </li>
         );
       })}
-    </ul>
+    </Content>
   );
 };
 

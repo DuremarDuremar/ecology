@@ -42,13 +42,13 @@ input{
       -webkit-appearance: none;
       margin: 0;
     }
-div::-webkit-scrollbar {
+*::-webkit-scrollbar {
 
     width: 4px;
     background-color: #e9e6db;
     
 }
-div::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #7490c7;
    
 }
