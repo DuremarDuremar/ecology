@@ -12,7 +12,7 @@ export const Content = styled.div`
     h2 {
       font-family: "Bad Script";
       font-size: 27px;
-      line-height: 120%;
+      line-height: 130%;
       padding-left: 10px;
     }
   }

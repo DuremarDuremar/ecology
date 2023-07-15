@@ -2,8 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
 import arrayCategory from "../data/category";
+import priceData from "../data/priceData";
 import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
-import { Main, Nav, Slider } from "../components";
+import { Main, Nav, Slider, Price } from "../components";
 import { Content, Global } from "./style";
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
               element={
                 <>
                   <Nav first={<LinkCatalog />} second={<LinkAbout />} />
-                  <Main title="Прайс" />
+                  <Main content={<Price data={priceData} />} title="Прайс" />
                 </>
               }
             />

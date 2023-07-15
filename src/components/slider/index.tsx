@@ -1,4 +1,4 @@
-import React, { FC, JSXElementConstructor } from "react";
+import React, { FC } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Content, Dot } from "./style";
