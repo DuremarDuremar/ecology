@@ -1,8 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import { Content } from "./style";
 
-const Nav = () => {
-  return <Content>Nav</Content>;
+interface IProps {
+  first?: JSX.Element;
+  second?: JSX.Element;
+}
+
+const Nav: FC<IProps> = ({ first, second }) => {
+  return (
+    <Content>
+      {first}
+      {second}
+    </Content>
+  );
 };
 
 export default Nav;

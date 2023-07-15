@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
 import arrayCategory from "../data/category";
+import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
 import { Main, Nav, Slider } from "../components";
 import { Content, Global } from "./style";
 
@@ -16,7 +17,7 @@ function App() {
               index
               element={
                 <>
-                  <Nav />
+                  <Nav first={<LinkPrice />} second={<LinkAbout />} />
                   <Main
                     content={<Slider data={arrayCategory} />}
                     title="Виды Услуг"
@@ -29,7 +30,7 @@ function App() {
               element={
                 <>
                   <Nav />
-                  <Main />
+                  <Main title="Прайс" />
                 </>
               }
             />
@@ -38,7 +39,7 @@ function App() {
               element={
                 <>
                   <Nav />
-                  <Main />
+                  <Main title="О нас" />
                 </>
               }
             />
@@ -47,7 +48,7 @@ function App() {
               element={
                 <>
                   <Nav />
-                  <Main />
+                  <Main title="Виды Услуг" />
                 </>
               }
             />

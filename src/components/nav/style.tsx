@@ -2,5 +2,9 @@ import styled from "styled-components";
 
 export const Content = styled.section`
   grid-area: n;
-  background-color: #728cc3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 `;

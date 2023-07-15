@@ -16,7 +16,7 @@ export const Content = styled.div`
   }
 
   ul {
-    margin-top: 40px;
+    margin-top: 45px;
     background: #e9e6db;
     border: 3px solid #7490c7;
     border-radius: 20px;
