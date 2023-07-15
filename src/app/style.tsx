@@ -46,9 +46,11 @@ div::-webkit-scrollbar {
 
     width: 4px;
     background-color: #e9e6db;
+    
 }
 div::-webkit-scrollbar-thumb {
     background-color: #7490c7;
+   
 }
 
 img {

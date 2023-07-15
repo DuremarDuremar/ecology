@@ -29,7 +29,7 @@ function App() {
               path="price"
               element={
                 <>
-                  <Nav />
+                  <Nav first={<LinkCatalog />} second={<LinkAbout />} />
                   <Main title="Прайс" />
                 </>
               }
@@ -38,7 +38,7 @@ function App() {
               path="about"
               element={
                 <>
-                  <Nav />
+                  <Nav first={<LinkCatalog />} second={<LinkPrice />} />
                   <Main title="О нас" />
                 </>
               }
@@ -47,7 +47,7 @@ function App() {
               path="*"
               element={
                 <>
-                  <Nav />
+                  <Nav first={<LinkPrice />} second={<LinkAbout />} />
                   <Main title="Виды Услуг" />
                 </>
               }

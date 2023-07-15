@@ -1,13 +1,17 @@
 import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
+export const NLink = styled(NavLink)``;
 
 export const LinkCatalog = () => {
-  return <div>Canalog</div>;
+  return <NLink to="/">Catalog</NLink>;
 };
 
 export const LinkPrice = () => {
-  return <div>Price</div>;
+  return <NLink to="/price">price</NLink>;
 };
 
 export const LinkAbout = () => {
-  return <div>About</div>;
+  return <NLink to="/about">about</NLink>;
 };

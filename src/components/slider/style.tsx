@@ -2,24 +2,26 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   overflow: auto;
+
   div {
     height: 40px;
     background: #e1e2db;
     position: fixed;
-    width: 100%;
+    width: 102%;
+
     h2 {
       font-family: "Bad Script";
       font-size: 27px;
-      line-height: 140%;
+      line-height: 120%;
       padding-left: 10px;
     }
   }
 
   ul {
-    margin-top: 45px;
+    margin-top: 40px;
     background: #e9e6db;
     border: 3px solid #7490c7;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px 10px 10px 25px;
     display: flex;
     flex-direction: column;
