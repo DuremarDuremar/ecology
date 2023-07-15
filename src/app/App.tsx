@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
-import arrayCategory from "../data/catigory";
+import arrayCategory from "../data/category";
 import { Main, Nav, Slider } from "../components";
 import { Content, Global } from "./style";
 

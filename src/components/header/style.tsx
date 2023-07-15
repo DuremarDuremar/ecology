@@ -21,6 +21,7 @@ export const Content = styled.header`
   strong {
     font-size: 60px;
     line-height: 110%;
+    font-style: italic;
   }
 
   h1 {
