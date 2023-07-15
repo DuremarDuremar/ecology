@@ -14,7 +14,7 @@ interface IProps {
 
 const Slider: FC<IProps> = ({ data }) => {
   const items = data.map((item: any, index: number) => {
-    const style = { height: 100 + item.content.length * 25 };
+    const style = { height: 110 + item.content.length * 25 };
     return (
       <Content className="item" style={style} data-value={index + 1}>
         <div>

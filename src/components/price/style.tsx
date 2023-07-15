@@ -5,8 +5,8 @@ export const Content = styled.div``;
 export const List = styled.ul`
   background: #e9e6db;
   font-weight: 400;
-  max-height: 360px;
-  height: 100%;
+  /* max-height: 360px; */
+  height: 55vh;
   overflow: auto;
   display: flex;
   flex-direction: column;
