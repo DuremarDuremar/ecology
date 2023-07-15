@@ -44,11 +44,11 @@ input{
     }
 div::-webkit-scrollbar {
 
-    width: 6px;
-    background-color: #f9f9fd;
+    width: 4px;
+    background-color: #e9e6db;
 }
 div::-webkit-scrollbar-thumb {
-    background-color: #0F2027;
+    background-color: #7490c7;
 }
 
 img {

@@ -17,7 +17,10 @@ function App() {
               element={
                 <>
                   <Nav />
-                  <Main content={<Slider data={arrayCategory} />} />
+                  <Main
+                    content={<Slider data={arrayCategory} />}
+                    title="Виды Услуг"
+                  />
                 </>
               }
             />
