@@ -45,6 +45,7 @@ input{
 *::-webkit-scrollbar {
 
     width: 4px;
+    height:4px;
     background-color: #e9e6db;
     
 }
