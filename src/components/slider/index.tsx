@@ -1,7 +1,7 @@
 import React, { FC, JSXElementConstructor } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Content } from "./style";
+import { Content, Dot } from "./style";
 
 interface IItem {
   header: string;
@@ -14,7 +14,7 @@ interface IProps {
 
 const Slider: FC<IProps> = ({ data }) => {
   const items = data.map((item: any, index: number) => {
-    const style = { height: 300 + index * 10 };
+    const style = { height: 100 + item.content.length * 25 };
     return (
       <Content className="item" style={style} data-value={index + 1}>
         <div>
@@ -28,8 +28,19 @@ const Slider: FC<IProps> = ({ data }) => {
       </Content>
     );
   });
-
-  return <AliceCarousel autoHeight infinite mouseTracking items={items} />;
+  const renderDotsItem = ({ isActive }: any) => {
+    return isActive ? <Dot active /> : <Dot />;
+  };
+  return (
+    <AliceCarousel
+      autoHeight
+      infinite
+      mouseTracking
+      disableButtonsControls
+      renderDotsItem={renderDotsItem}
+      items={items}
+    />
+  );
 };
 
 export default Slider;
