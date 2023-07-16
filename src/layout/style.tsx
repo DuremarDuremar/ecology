@@ -18,7 +18,19 @@ export const Footer = styled.footer`
   font-size: 14px;
   position: absolute;
   right: 5px;
-  bottom: 2px;
+  bottom: 7px;
   display: flex;
   column-gap: 20px;
+
+  :before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #7490c7;
+    max-width: 900px;
+    height: 3px;
+    width: 100%;
+    bottom: -15%;
+    left: 0;
+  }
 `;
