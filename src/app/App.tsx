@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
-import arrayCategory from "../data/category";
+import dataCategory from "../data/categoryData";
 import priceData from "../data/priceData";
 import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
-import { Main, Nav, Slider, Price } from "../components";
+import { Main, Nav, Slider, Price, About } from "../components";
 import { Content, Global } from "./style";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                 <>
                   <Nav first={<LinkPrice />} second={<LinkAbout />} />
                   <Main
-                    content={<Slider data={arrayCategory} />}
+                    content={<Slider data={dataCategory} />}
                     title="Виды Услуг"
                   />
                 </>
@@ -40,7 +40,7 @@ function App() {
               element={
                 <>
                   <Nav first={<LinkCatalog />} second={<LinkPrice />} />
-                  <Main title="О нас" />
+                  <Main content={<About />} title="О нас" />
                 </>
               }
             />

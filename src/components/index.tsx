@@ -4,3 +4,4 @@ export { default as Main } from "./main";
 export { default as Nav } from "./nav";
 export { default as Slider } from "./slider";
 export { default as Price } from "./price";
+export { default as About } from "./about";

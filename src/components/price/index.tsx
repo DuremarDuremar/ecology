@@ -26,7 +26,7 @@ const Price: FC<IProps> = ({ data }) => {
     } else if (sort === 4) {
       setItems(sortBy(data, ["price"]).reverse());
     } else return;
-  }, [sort]);
+  }, [sort, data]);
 
   return (
     <Content>

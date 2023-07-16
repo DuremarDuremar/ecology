@@ -74,7 +74,7 @@ const Category6 = {
   ],
 };
 
-const arrayCategory = [
+const dataCategory = [
   Category1,
   Category2,
   Category3,
@@ -83,4 +83,4 @@ const arrayCategory = [
   Category6,
 ];
 
-export default arrayCategory;
+export default dataCategory;
