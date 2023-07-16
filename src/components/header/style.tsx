@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Content = styled.header`
   grid-area: h;
-  /* background-color: #90a5ce; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,5 +39,12 @@ export const Content = styled.header`
 
   a {
     padding-top: 15px;
+  }
+  svg {
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10px;
   }
 `;

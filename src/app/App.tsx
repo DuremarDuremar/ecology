@@ -38,7 +38,7 @@ function App() {
               path="about"
               element={
                 <>
-                  <Nav first={<LinkCatalog />} second={<LinkPrice />} />
+                  <Nav first={<LinkPrice />} second={<LinkCatalog />} />
                   <Main content={<About data={personsData} />} title="О нас" />
                 </>
               }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Content } from "./style";
+import { ReactComponent as SvgPhone } from "../../assets/phone-icon.svg";
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
       </h1>
 
       <div>
-        <a href="tel:+6494461709">+7 6494461709</a>
+        <a href="tel:+79179083926">
+          <SvgPhone /> +7-917-908-39-26
+        </a>
         <h3>честность, результат & экологичность</h3>
       </div>
     </Content>

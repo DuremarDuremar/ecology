@@ -11,7 +11,7 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  padding: 0 4px;
+  padding: 4px;
   li {
     display: flex;
     justify-content: space-between;
