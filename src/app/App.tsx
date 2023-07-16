@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout";
-import dataCategory from "../data/categoryData";
-import priceData from "../data/priceData";
+import { dataCategory, priceData, personsData } from "../data";
 import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
 import { Main, Nav, Slider, Price, About } from "../components";
 import { Content, Global } from "./style";
@@ -40,7 +39,7 @@ function App() {
               element={
                 <>
                   <Nav first={<LinkCatalog />} second={<LinkPrice />} />
-                  <Main content={<About />} title="О нас" />
+                  <Main content={<About data={personsData} />} title="О нас" />
                 </>
               }
             />
