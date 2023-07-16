@@ -8,6 +8,7 @@ export const Content = styled.main`
     "m m m m n"
     "m m m m n";
   min-height: 100vh;
+  overflow: hidden;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
 `;
