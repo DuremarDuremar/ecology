@@ -76,4 +76,7 @@ export const Content = styled.div`
   font-weight: 300;
   background: #e1e2db;
   color: #2b3244;
+  @media (max-width: 900px) {
+    padding: 0 4px;
+  }
 `;

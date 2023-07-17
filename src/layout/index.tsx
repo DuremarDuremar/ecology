@@ -1,14 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import { Outlet } from "react-router-dom";
 import { Header } from "../components";
 import Logo from "../components/logo";
 import { Content, Footer } from "./style";
 
-const Layout = () => {
+interface IProps {
+  res900: boolean;
+}
+
+const Layout: FC<IProps> = ({ res900 }) => {
   return (
     <Content>
       <Header />
-      <Logo />
+      {res900 && <Logo />}
       <Outlet />
       <Footer>
         <span>125993, г. Казань, ул. Б. Грузинская 4/6</span>

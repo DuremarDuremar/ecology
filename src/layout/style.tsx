@@ -24,6 +24,11 @@ export const Footer = styled.footer`
   bottom: 7px;
   display: flex;
   column-gap: 20px;
+  @media (max-width: 900px) {
+    position: static;
+    height: 30px;
+    line-height: 300%;
+  }
 
   :before {
     content: "";

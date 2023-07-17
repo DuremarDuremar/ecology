@@ -12,12 +12,18 @@ export const List = styled.ul`
   flex-direction: column;
   row-gap: 8px;
   padding: 4px;
+  @media (max-width: 900px) {
+    max-height: 100%;
+  }
   li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
     font-size: 17px;
     font-style: italic;
+    @media (max-width: 630px) {
+      font-size: 14px;
+    }
   }
   li:first-child {
     padding-top: 3px;
@@ -25,10 +31,17 @@ export const List = styled.ul`
   }
   h5 {
     width: 85%;
+    @media (max-width: 900px) {
+      width: 75%;
+    }
   }
   h6 {
+    padding: 5px;
     text-align: center;
     width: 15%;
+    @media (max-width: 900px) {
+      width: 25%;
+    }
   }
 `;
 
@@ -53,6 +66,9 @@ export const Sort = styled.div`
       inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
       rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
     transition: all 0.2s ease-in-out;
+    @media (max-width: 630px) {
+      font-size: 20px;
+    }
   }
   button:first-child {
     width: 80%;

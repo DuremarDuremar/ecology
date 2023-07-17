@@ -6,4 +6,9 @@ export const Content = styled.section`
   flex-direction: column;
   align-items: center;
   row-gap: 12px;
+  @media (max-width: 900px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
 `;

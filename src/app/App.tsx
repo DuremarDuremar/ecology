@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import Layout from "../layout";
 import { dataCategory, priceData, personsData } from "../data";
 import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
@@ -7,19 +8,22 @@ import { Main, Nav, Slider, Price, About } from "../components";
 import { Content, Global } from "./style";
 
 function App() {
+  const res900 = useMediaQuery({ query: "(min-width: 901px)" });
+  const res630 = useMediaQuery({ query: "(min-width: 631px)" });
+
   return (
     <>
       <Global />
       <Content>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout res900={res900} />}>
             <Route
               index
               element={
                 <>
                   <Nav first={<LinkPrice />} second={<LinkAbout />} />
                   <Main
-                    content={<Slider data={dataCategory} />}
+                    content={<Slider data={dataCategory} res900={res900} />}
                     title="Виды Услуг"
                   />
                 </>
