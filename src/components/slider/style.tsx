@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   overflow: auto;
+  margin: 0 3px;
 
   div {
     height: 40px;

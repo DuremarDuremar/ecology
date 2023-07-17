@@ -12,6 +12,9 @@ export const Content = styled.main`
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
   position: relative;
+  @media (max-width: 900px) {
+    display: block;
+  }
 `;
 
 export const Footer = styled.footer`
