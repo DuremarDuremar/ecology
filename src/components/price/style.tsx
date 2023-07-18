@@ -32,7 +32,7 @@ export const List = styled.ul`
   h5 {
     width: 85%;
     @media (max-width: 900px) {
-      width: 75%;
+      width: 70%;
     }
   }
   h6 {
@@ -40,7 +40,7 @@ export const List = styled.ul`
     text-align: center;
     width: 15%;
     @media (max-width: 900px) {
-      width: 25%;
+      width: 30%;
     }
   }
 `;
