@@ -16,29 +16,3 @@ export const Content = styled.main`
     display: block;
   }
 `;
-
-export const Footer = styled.footer`
-  font-size: 14px;
-  position: absolute;
-  right: 5px;
-  bottom: 7px;
-  display: flex;
-  column-gap: 20px;
-  @media (max-width: 900px) {
-    position: static;
-    height: 30px;
-    line-height: 300%;
-  }
-
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    background: #7490c7;
-    max-width: 900px;
-    height: 3px;
-    width: 100%;
-    bottom: -15%;
-    left: 0;
-  }
-`;
