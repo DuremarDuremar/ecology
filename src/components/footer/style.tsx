@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Content = styled.footer`
-  font-size: 14px;
+  font-size: 12px;
   position: absolute;
   right: 5px;
   bottom: 7px;

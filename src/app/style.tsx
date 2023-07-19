@@ -9,6 +9,7 @@ export const Global = createGlobalStyle`
   border: 0;
   user-select: none;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
   margin: 0;

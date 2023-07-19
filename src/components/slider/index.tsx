@@ -26,7 +26,8 @@ const Slider: FC<IProps> = ({ data, res900, res630, res480, res390 }) => {
       ? { height: 110 + item.content.length * 33 }
       : res390
       ? { height: 110 + item.content.length * 47 }
-      : { height: 57 + item.content.length * 57 };
+      : { height: 100 + item.content.join().length * 0.78 };
+
     return (
       <Content className="item" style={style} data-value={index + 1}>
         <div>

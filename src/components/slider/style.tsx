@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   overflow: auto;
-  margin: 0 3px;
+  margin: 0 4px;
 
   div {
     height: 40px;
@@ -43,4 +43,5 @@ export const Dot = styled.button<{
   border-radius: 50%;
   border: 3px solid #2b3244;
   background: ${(props) => (props.active ? "#7490c7" : "#e9e6db")};
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `;

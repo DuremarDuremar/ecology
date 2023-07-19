@@ -53,7 +53,7 @@ export const Content = styled.header<{
   }
 
   a {
-    padding-top: 15px;
+    padding: 10px 15px;
     @media (max-width: 900px) {
       border-radius: 5px;
       background: rgb(100, 100, 100)
