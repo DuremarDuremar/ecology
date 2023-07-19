@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ecology/static/css/main.f32e9301.css",
+    "main.js": "/ecology/static/js/main.a62bb37c.js",
+    "static/media/logo.jpg": "/ecology/static/media/logo.92370874dcde4657c934.jpg",
+    "static/media/person4.jpg": "/ecology/static/media/person4.afbdaef56e2353f5b07a.jpg",
+    "static/media/person2.jpg": "/ecology/static/media/person2.940d2ea1723616579316.jpg",
+    "static/media/person1.jpg": "/ecology/static/media/person1.eb3c75f01bd7f9e0caa0.jpg",
+    "static/media/person3.jpg": "/ecology/static/media/person3.a9f5e3cb9f92b7801438.jpg",
+    "static/media/price-icon.svg": "/ecology/static/media/price-icon.679da44608be63517e2f82e5e88ee601.svg",
+    "static/media/phone-icon.svg": "/ecology/static/media/phone-icon.ce80987c57d45140de7efbde4614a832.svg",
+    "static/media/open-icon.svg": "/ecology/static/media/open-icon.95d192a989ab0a04451a8487cfca9651.svg",
+    "static/media/user-icon.svg": "/ecology/static/media/user-icon.76b46c3653f51b962d1dfa82c3afe9a9.svg",
+    "index.html": "/ecology/index.html",
+    "main.f32e9301.css.map": "/ecology/static/css/main.f32e9301.css.map",
+    "main.a62bb37c.js.map": "/ecology/static/js/main.a62bb37c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f32e9301.css",
+    "static/js/main.a62bb37c.js"
+  ]
+}
