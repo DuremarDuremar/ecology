@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Outlet } from "react-router-dom";
 import { Header, Logo, Footer } from "../components";
+import logo from "../assets/logo.jpg";
 
 import { Content } from "./style";
 
@@ -11,8 +12,8 @@ interface IProps {
 const Layout: FC<IProps> = ({ res900 }) => {
   return (
     <Content>
-      <Header />
-      {res900 && <Logo />}
+      <Header logo={logo} res900={res900} />
+      {res900 && <Logo logo={logo} />}
       <Outlet />
       <Footer />
     </Content>

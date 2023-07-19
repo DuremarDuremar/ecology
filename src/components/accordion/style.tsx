@@ -7,6 +7,8 @@ export const Title = styled.div<{
   justify-content: center;
   transition: all 0.4s ease-in-out;
   background: ${(props) => (props.show ? "#7490c7" : "#e9e6db")};
+  position: relative;
+  z-index: 1;
   cursor: pointer;
   div {
     width: 60px;

@@ -15,7 +15,6 @@ const Price: FC<IProps> = ({ data }) => {
   const [items, setItems] = useState<IItem[]>([]);
   const [sort, setSort] = useState<number>(1);
 
-  console.log("sort", sort);
   useEffect(() => {
     if (sort === 1) {
       setItems(sortBy(data, ["name"]));

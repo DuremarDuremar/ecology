@@ -1,8 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { Content } from "./style";
-import logo from "../../assets/logo.jpg";
 
-const Logo = () => {
+interface IProps {
+  logo: string;
+}
+
+const Logo: FC<IProps> = ({ logo }) => {
   return (
     <Content>
       <div>
