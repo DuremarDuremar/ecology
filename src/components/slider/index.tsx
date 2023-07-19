@@ -12,18 +12,21 @@ interface IProps {
   data: IItem[];
   res900: boolean;
   res630: boolean;
-  res520: boolean;
+  res480: boolean;
+  res390: boolean;
 }
 
-const Slider: FC<IProps> = ({ data, res900, res630, res520 }) => {
+const Slider: FC<IProps> = ({ data, res900, res630, res480, res390 }) => {
   const items = data.map((item: any, index: number) => {
     const style = res900
       ? { height: 110 + item.content.length * 25 }
       : res630
       ? { height: 110 + item.content.length * 30 }
-      : res520
-      ? { height: 110 + item.content.length * 35 }
-      : { height: 110 + item.content.length * 47 };
+      : res480
+      ? { height: 110 + item.content.length * 33 }
+      : res390
+      ? { height: 110 + item.content.length * 47 }
+      : { height: 57 + item.content.length * 57 };
     return (
       <Content className="item" style={style} data-value={index + 1}>
         <div>

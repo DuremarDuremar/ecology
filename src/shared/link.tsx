@@ -1,9 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as SvgPrice } from "../assets/price-icon.svg";
-import { ReactComponent as SvgPerson } from "../assets/user-icon.svg";
-import { ReactComponent as SvgCatalog } from "../assets/open-icon.svg";
 
 export const NLink = styled(NavLink)`
   div {
@@ -36,32 +33,19 @@ export const NLink = styled(NavLink)`
   }
 `;
 
-export const LinkCatalog = () => {
+interface IProps {
+  link: string;
+  Icon: string;
+}
+
+const Link: FC<IProps> = ({ link, Icon }) => {
   return (
-    <NLink to="/">
+    <NLink to={link}>
       <div>
-        <SvgCatalog />
+        <Icon />
       </div>
     </NLink>
   );
 };
 
-export const LinkPrice = () => {
-  return (
-    <NLink to="/price">
-      <div>
-        <SvgPrice />
-      </div>
-    </NLink>
-  );
-};
-
-export const LinkAbout = () => {
-  return (
-    <NLink to="/about">
-      <div>
-        <SvgPerson />
-      </div>
-    </NLink>
-  );
-};
+export default Link;

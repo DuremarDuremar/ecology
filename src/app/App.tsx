@@ -3,14 +3,18 @@ import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import Layout from "../layout";
 import { dataCategory, priceData, personsData } from "../data";
-import { LinkCatalog, LinkPrice, LinkAbout } from "../shared/link";
+import Link from "../shared/link";
 import { Main, Nav, Slider, Price, About, Accordion } from "../components";
+import { ReactComponent as SvgPrice } from "../assets/price-icon.svg";
+import { ReactComponent as SvgPerson } from "../assets/user-icon.svg";
+import { ReactComponent as SvgCatalog } from "../assets/open-icon.svg";
 import { Content, Global } from "./style";
 
 function App() {
   const res900 = useMediaQuery({ query: "(min-width: 901px)" });
   const res630 = useMediaQuery({ query: "(min-width: 631px)" });
-  const res520 = useMediaQuery({ query: "(min-width: 521px)" });
+  const res480 = useMediaQuery({ query: "(min-width: 481px)" });
+  const res390 = useMediaQuery({ query: "(min-width: 391px)" });
 
   const section = [
     <Main
@@ -19,7 +23,8 @@ function App() {
           data={dataCategory}
           res900={res900}
           res630={res630}
-          res520={res520}
+          res480={res480}
+          res390={res390}
         />
       }
       title="Виды Услуг"
@@ -28,8 +33,10 @@ function App() {
     <Main content={<About data={personsData} />} title="О нас" />,
   ];
 
+  const icons = [SvgCatalog, SvgPrice, SvgPerson];
+
   const sectionAc = (n: number) => {
-    return <Accordion>{section[n]}</Accordion>;
+    return <Accordion Icon={icons[n]}>{section[n]}</Accordion>;
   };
 
   return (
@@ -43,7 +50,10 @@ function App() {
               element={
                 res900 ? (
                   <>
-                    <Nav first={<LinkPrice />} second={<LinkAbout />} />
+                    <Nav
+                      first={<Link Icon={SvgPrice} link="/price" />}
+                      second={<Link Icon={SvgPerson} link="/about" />}
+                    />
                     {section[0]}
                   </>
                 ) : (
@@ -58,7 +68,10 @@ function App() {
               element={
                 res900 ? (
                   <>
-                    <Nav first={<LinkCatalog />} second={<LinkAbout />} />
+                    <Nav
+                      first={<Link Icon={SvgCatalog} link="/" />}
+                      second={<Link Icon={SvgPerson} link="/about" />}
+                    />
                     {section[1]}
                   </>
                 ) : (
@@ -73,7 +86,10 @@ function App() {
               element={
                 res900 ? (
                   <>
-                    <Nav first={<LinkPrice />} second={<LinkCatalog />} />
+                    <Nav
+                      first={<Link Icon={SvgPrice} link="/price" />}
+                      second={<Link Icon={SvgCatalog} link="/" />}
+                    />
                     {section[2]}
                   </>
                 ) : (
@@ -88,7 +104,10 @@ function App() {
               element={
                 res900 ? (
                   <>
-                    <Nav first={<LinkPrice />} second={<LinkAbout />} />
+                    <Nav
+                      first={<Link Icon={SvgPrice} link="/price" />}
+                      second={<Link Icon={SvgPerson} link="/about" />}
+                    />
                     {section[0]}
                   </>
                 ) : (
