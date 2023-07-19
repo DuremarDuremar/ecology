@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Content = styled.section`
   grid-area: m;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 900px) {
     margin: 10px 5px;

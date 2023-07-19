@@ -1,7 +1,8 @@
 import styled from "styled-components";
 export const Content = styled.div`
   overflow: auto;
-  /* max-height: 360px; */
+  z-index: 1;
+  position: relative;
   max-height: 55vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  z-index: 1;
+  position: relative;
+`;
 
 export const List = styled.ul`
   background: #e9e6db;
+  z-index: 1;
   font-weight: 400;
   /* max-height: 360px; */
   max-height: 55vh;
