@@ -21,7 +21,7 @@ export const Content = styled.header<{
   h1,
   h3 {
     font-family: "Bad Script";
-    font-size: ${(props) => (props.res900 ? "35px" : "24px")};
+    font-size: ${(props) => (props.res900 ? "30px" : "20px")};
     line-height: 110%;
   }
   h3 {
@@ -30,9 +30,9 @@ export const Content = styled.header<{
     }
   }
   strong {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 110%;
-    font-style: italic;
+    /* font-style: italic; */
   }
 
   h1 {
@@ -54,22 +54,21 @@ export const Content = styled.header<{
 
   a {
     padding: 10px 15px;
-    @media (max-width: 900px) {
-      border-radius: 5px;
-      background: rgb(100, 100, 100)
-        radial-gradient(
-          circle at 0 0,
-          rgba(255, 255, 255, 0.65),
-          rgba(255, 255, 255, 0.35)
-        );
-      box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px,
-        inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
-        rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
-      text-align: center;
-      font-weight: 600;
-      margin-top: 10px;
-      z-index: 1;
-    }
+
+    border-radius: 5px;
+    background: rgb(100, 100, 100)
+      radial-gradient(
+        circle at 0 0,
+        rgba(255, 255, 255, 0.65),
+        rgba(255, 255, 255, 0.35)
+      );
+    box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px,
+      inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+      rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    z-index: 1;
   }
   svg {
     color: black;

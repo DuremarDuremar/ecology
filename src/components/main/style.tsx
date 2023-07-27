@@ -5,7 +5,7 @@ export const Content = styled.section`
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 
   @media (max-width: 900px) {
     margin: 10px 5px;

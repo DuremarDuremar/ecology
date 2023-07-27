@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import Layout from "../layout";
-import { dataCategory, priceData, personsData } from "../data";
+import { dataCategory, priceData } from "../data";
 import Link from "../shared/link";
 import { Main, Nav, Slider, Price, About, Accordion } from "../components";
 import { ReactComponent as SvgPrice } from "../assets/price-icon.svg";
@@ -27,10 +27,10 @@ function App() {
           res390={res390}
         />
       }
-      title="Виды Услуг"
+      title="Виды Услуг (по экологическим категориям)"
     />,
     <Main content={<Price data={priceData} />} title="Прайс" />,
-    <Main content={<About data={personsData} />} title="О нас" />,
+    <Main content={<About />} title="Контакты" />,
   ];
 
   const icons = [SvgCatalog, SvgPrice, SvgPerson];

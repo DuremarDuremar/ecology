@@ -1,34 +1,23 @@
-import React, { FC } from "react";
-import { Content, Person, Foto, Info } from "./style";
+import React from "react";
+import { Content, Persons, Text } from "./style";
 
-interface IItem {
-  foto: string;
-  name: string;
-  prof: string;
-  description: string;
-}
-
-interface IProps {
-  data: IItem[];
-}
-
-const About: FC<IProps> = ({ data }) => {
+const About = () => {
   return (
     <Content>
-      {data.map((item, index) => {
-        return (
-          <Person key={index}>
-            <Foto>
-              <img src={item.foto} alt={item.name} />
-            </Foto>
-            <Info>
-              <h3>{item.name}</h3>
-              <h4>{item.prof}</h4>
-              <p>{item.description}</p>
-            </Info>
-          </Person>
-        );
-      })}
+      <Persons>
+        <div>
+          <h4>Сергей</h4>
+          <div>тел. 8 917 908 39 26</div>
+          <div>email: sergeink_777@mail.ru</div>
+        </div>
+
+        <div>
+          <h4>Елена</h4>
+          <div>тел. 8 927 458 91 89 </div>
+          <div>email: 3182907@mail.ru</div>
+        </div>
+      </Persons>
+      <Text></Text>
     </Content>
   );
 };
