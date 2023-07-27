@@ -16,13 +16,14 @@ export const List = styled.ul`
   flex-direction: column;
   row-gap: 8px;
   padding: 4px;
+  border-left: 2px solid #2b3244;
   @media (max-width: 900px) {
     max-height: 100%;
   }
   li {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #2b3244;
     font-size: 17px;
     font-style: italic;
     @media (max-width: 630px) {

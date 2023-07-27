@@ -29,6 +29,33 @@ export const Content = styled.header<{
     line-height: 110%;
   }
   h3 {
+    :after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: #7490c7;
+      max-width: 370px;
+      height: 3px;
+      width: 100%;
+      right: 10%;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    :before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: #7490c7;
+      max-width: 370px;
+      height: 3px;
+      width: 100%;
+      right: 0;
+      bottom: 5%;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
   }
   strong {
     font-size: 30px;
@@ -47,7 +74,7 @@ export const Content = styled.header<{
       position: absolute;
       background: #7490c7;
       max-width: 300px;
-      height: 2px;
+      height: 3px;
       width: 100%;
       left: 10%;
       @media (max-width: 900px) {

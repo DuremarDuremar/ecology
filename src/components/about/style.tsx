@@ -1,14 +1,30 @@
 import styled from "styled-components";
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: #e9e6db;
+  padding: 5px;
+  border-radius: 5px;
+  @media (max-width: 700px) {
+    display: block;
+  }
+`;
 export const Persons = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   font-size: 24px;
   font-weight: 400;
+  flex: 50%;
 `;
-export const Text = styled.p``;
+export const Text = styled.div`
+  flex: 50%;
+  @media (max-width: 700px) {
+    padding-top: 30px;
+  }
+`;
 // export const Content = styled.div`
 //   overflow: auto;
 //   z-index: 1;
