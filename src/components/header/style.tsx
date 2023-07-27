@@ -17,6 +17,10 @@ export const Content = styled.header<{
     display: flex;
     justify-content: space-around;
     flex-direction: ${(props) => (props.res900 ? "row" : "column-reverse")};
+    margin-top: 20px;
+    @media (max-width: 480px) {
+      margin-top: 10px;
+    }
   }
   h1,
   h3 {
@@ -25,18 +29,18 @@ export const Content = styled.header<{
     line-height: 110%;
   }
   h3 {
-    @media (max-width: 900px) {
-      margin-top: 20px;
-    }
   }
   strong {
     font-size: 30px;
     line-height: 110%;
-    /* font-style: italic; */
+    @media (max-width: 480px) {
+      line-height: 170%;
+    }
   }
 
   h1 {
     position: relative;
+
     :after {
       content: "";
       display: block;

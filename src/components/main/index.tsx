@@ -5,12 +5,15 @@ import TitleCateg from "../../shared/titleCateg";
 interface IProps {
   content?: JSX.Element;
   title?: string;
+  subtitle?: string;
 }
 
-const Main: FC<IProps> = ({ content, title }) => {
+const Main: FC<IProps> = ({ content, title, subtitle }) => {
   return (
     <Content>
-      <TitleCateg>{title}</TitleCateg>
+      <TitleCateg>
+        {title} <span>{subtitle}</span>
+      </TitleCateg>
       <Wrapper>{content}</Wrapper>
     </Content>
   );

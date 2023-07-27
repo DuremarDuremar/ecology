@@ -27,7 +27,8 @@ function App() {
           res390={res390}
         />
       }
-      title="Виды Услуг (по экологическим категориям)"
+      title="Виды Услуг"
+      subtitle="(по экологическим категориям)"
     />,
     <Main content={<Price data={priceData} />} title="Прайс" />,
     <Main content={<About />} title="Контакты" />,
@@ -44,7 +45,7 @@ function App() {
       <Global />
       <Content>
         <Routes>
-          <Route path="/" element={<Layout res900={res900} />}>
+          <Route path="/" element={<Layout res900={res900} res480={res480} />}>
             <Route
               index
               element={

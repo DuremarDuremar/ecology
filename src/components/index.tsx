@@ -5,5 +5,4 @@ export { default as Nav } from "./nav";
 export { default as Slider } from "./slider";
 export { default as Price } from "./price";
 export { default as About } from "./about";
-export { default as Footer } from "./footer";
 export { default as Accordion } from "./accordion";

@@ -5,13 +5,15 @@ import { ReactComponent as SvgPhone } from "../../assets/phone-icon.svg";
 interface IProps {
   logo: string;
   res900: boolean;
+  res480: boolean;
 }
 
-const Header: FC<IProps> = ({ logo, res900 }) => {
+const Header: FC<IProps> = ({ logo, res900, res480 }) => {
   return (
     <Content res900={res900}>
       <h1>
-        Экологические услуги - <strong>ИП Куляпин С.Н.</strong>
+        Экологические услуги {!res480 ? <br /> : "- "}
+        <strong>ИП Куляпин С.Н.</strong>
       </h1>
 
       <div>
