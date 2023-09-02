@@ -4,9 +4,10 @@ import { Content, Title, Body } from "./style";
 interface IProps {
   children: JSX.Element;
   Icon: string;
+  title: string;
 }
 
-const Accordion: FC<IProps> = ({ children, Icon }) => {
+const Accordion: FC<IProps> = ({ children, Icon, title }) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -15,6 +16,7 @@ const Accordion: FC<IProps> = ({ children, Icon }) => {
         <div>
           <Icon />
         </div>
+        <span>{title}</span>
         <span>{show ? "-" : "+"}</span>
       </Title>
       {show && <Body>{children}</Body>}

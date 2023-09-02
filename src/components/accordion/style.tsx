@@ -1,5 +1,7 @@
 import styled from "styled-components";
-export const Content = styled.div``;
+export const Content = styled.div`
+  padding-bottom: 10px;
+`;
 export const Title = styled.div<{
   show: boolean;
 }>`
@@ -44,6 +46,7 @@ export const Title = styled.div<{
     font-size: 25px;
     font-weight: 600;
     color: black;
+    padding-left: 5px;
   }
 `;
 export const Body = styled.div``;

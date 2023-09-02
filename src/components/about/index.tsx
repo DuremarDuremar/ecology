@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, Persons, Text, Form } from "./style";
+import { Content, Persons, Send, Form } from "./style";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           <div>email: 3182907@mail.ru</div>
         </div>
       </Persons>
-      <Text>
+      <Send>
         <Form>
           <h4>Приглашаем к сотрудничеству</h4>
           <input type="text" placeholder="Ваше имя" name="user_name" />
@@ -28,10 +28,10 @@ const About = () => {
             name="user_email"
           />
           <label htmlFor="ta">Ваша задача</label>
-          <textarea name="" id="ta" cols={50} rows={6}></textarea>
+          <textarea name="" id="ta" cols={40} rows={6}></textarea>
           <button type="submit">Отправить</button>
         </Form>
-      </Text>
+      </Send>
     </Content>
   );
 };

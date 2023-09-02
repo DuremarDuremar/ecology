@@ -19,7 +19,7 @@ export const Persons = styled.div`
   font-weight: 400;
   flex: 50%;
 `;
-export const Text = styled.div`
+export const Send = styled.div`
   flex: 50%;
   @media (max-width: 700px) {
     padding-top: 30px;
@@ -40,22 +40,23 @@ export const Form = styled.form`
   input[type="text"],
   input[type="tel"],
   input[type="email"] {
-    padding-left: 4px;
-    max-width: 228px;
+    padding: 4px 3px;
+    max-width: 258px;
     width: 100%;
     color: #7d7d7d;
     font-size: 12px;
     font-weight: 100;
     line-height: 118%;
-    border-bottom: 1px solid #7d7d7d;
-    padding-bottom: 6px;
+    border-bottom: 1px solid #7490c7;
+    border-left: 1px solid #7490c7;
+    border-radius: 3px;
   }
   input[type="tel"],
   input[type="email"] {
     margin-top: 24px;
   }
   input[type="text"] {
-    margin-top: 39px;
+    margin-top: 24px;
   }
   input[type="checkbox"] {
     width: 9px;
@@ -72,7 +73,8 @@ export const Form = styled.form`
     padding-left: 4px;
   }
   button {
-    background: #514a7e;
+    background: #7490c7;
+    border-radius: 3px;
     color: #fffdf5;
     margin-top: 20px;
     display: flex;
@@ -82,7 +84,7 @@ export const Form = styled.form`
     width: 100%;
     padding: 10px 0;
     font-size: 12px;
-    border: 0.5px solid #514a7e;
+    border: 0.5px solid #7490c7;
     transition: all 0.7s ease-in-out;
     svg {
       width: 26px;
@@ -92,10 +94,10 @@ export const Form = styled.form`
     }
     &:hover {
       background: #fffdf5;
-      color: #514a7e;
+      color: #7490c7;
 
       svg {
-        fill: #514a7e;
+        fill: #7490c7;
       }
     }
   }
@@ -105,6 +107,9 @@ export const Form = styled.form`
     font-family: "Bad Script";
   }
   textarea {
-    border: 1px solid black;
+    border: 1px solid #7490c7;
+    border-radius: 3px;
+    padding: 3px 6px;
+    resize: none;
   }
 `;

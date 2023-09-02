@@ -36,8 +36,14 @@ function App() {
 
   const icons = [SvgCatalog, SvgPrice, SvgPerson];
 
+  const titleAc = ["каталог", "прайс", "контакты"];
+
   const sectionAc = (n: number) => {
-    return <Accordion Icon={icons[n]}>{section[n]}</Accordion>;
+    return (
+      <Accordion Icon={icons[n]} title={titleAc[n]}>
+        {section[n]}
+      </Accordion>
+    );
   };
 
   return (

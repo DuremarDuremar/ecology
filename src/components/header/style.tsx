@@ -15,7 +15,7 @@ export const Content = styled.header<{
   }
   > div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: ${(props) => (props.res900 ? "row" : "column-reverse")};
     margin-top: 20px;
     @media (max-width: 480px) {
@@ -24,6 +24,11 @@ export const Content = styled.header<{
     div {
       display: flex;
       column-gap: 20px;
+      a {
+        &:hover {
+          transform: skewX(4deg);
+        }
+      }
     }
   }
   h1,
@@ -33,12 +38,13 @@ export const Content = styled.header<{
     line-height: 110%;
   }
   h3 {
+    padding-left: 16px;
     :after {
       content: "";
       display: block;
       position: absolute;
       background: #7490c7;
-      max-width: 370px;
+      max-width: 28vw;
       height: 3px;
       width: 100%;
       right: 10%;
@@ -51,7 +57,7 @@ export const Content = styled.header<{
       display: block;
       position: absolute;
       background: #7490c7;
-      max-width: 370px;
+      max-width: 28vw;
       height: 3px;
       width: 100%;
       right: 0;
