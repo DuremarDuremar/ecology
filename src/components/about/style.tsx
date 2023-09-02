@@ -25,59 +25,86 @@ export const Text = styled.div`
     padding-top: 30px;
   }
 `;
-// export const Content = styled.div`
-//   overflow: auto;
-//   z-index: 1;
-//   position: relative;
-//   max-height: 55vh;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   column-gap: 10px;
-//   row-gap: 10px;
-//   @media (max-width: 900px) {
-//     max-height: 100%;
-//     grid-template-columns: repeat(1, 1fr);
-//   }
-// `;
-// export const Person = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   row-gap: 20px;
-//   font-size: 24px;
-//   font-weight: 400;
-// `;
-// export const Foto = styled.div`
-//   img {
-//     max-width: 150px;
-//     width: 100%;
-//     border-radius: 5px;
-//   }
-// `;
-// export const Info = styled.div`
-//   background: #e9e6db;
-//   max-width: 300px;
-//   width: 100%;
-//   padding-left: 10px;
-//   padding-right: 5px;
-//   height: 280px;
-//   overflow: auto;
-//   display: flex;
-//   flex-direction: column;
-//   row-gap: 4px;
-//   h3 {
-//     font-size: 20px;
-//     font-weight: 400;
-//   }
-//   h4 {
-//     font-weight: 500;
-//   }
-//   p {
-//     font-size: 16px;
-//     line-height: 130%;
-//     /* font-style: italic; */
-//   }
-//   @media (max-width: 900px) {
-//     max-width: 100%;
-//     height: 100%;
-//   }
-// `;
+export const Form = styled.form`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 118%;
+    font-family: "Bad Script";
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    padding-left: 4px;
+    max-width: 228px;
+    width: 100%;
+    color: #7d7d7d;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 118%;
+    border-bottom: 1px solid #7d7d7d;
+    padding-bottom: 6px;
+  }
+  input[type="tel"],
+  input[type="email"] {
+    margin-top: 24px;
+  }
+  input[type="text"] {
+    margin-top: 39px;
+  }
+  input[type="checkbox"] {
+    width: 9px;
+    height: 9px;
+  }
+  div {
+    margin-top: 6px;
+  }
+  span {
+    color: #7d7d7d;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 118%;
+    padding-left: 4px;
+  }
+  button {
+    background: #514a7e;
+    color: #fffdf5;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 120px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 12px;
+    border: 0.5px solid #514a7e;
+    transition: all 0.7s ease-in-out;
+    svg {
+      width: 26px;
+      height: 4px;
+      fill: #fffdf5;
+      transition: all 0.7s ease-in-out;
+    }
+    &:hover {
+      background: #fffdf5;
+      color: #514a7e;
+
+      svg {
+        fill: #514a7e;
+      }
+    }
+  }
+  label {
+    padding: 10px 0;
+    font-style: 15px;
+    font-family: "Bad Script";
+  }
+  textarea {
+    border: 1px solid black;
+  }
+`;

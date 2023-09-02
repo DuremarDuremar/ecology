@@ -5,7 +5,7 @@ export const Content = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 12px;
+  row-gap: 26px;
   @media (max-width: 900px) {
     flex-direction: row;
     justify-content: space-evenly;

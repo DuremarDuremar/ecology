@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NLink = styled(NavLink)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   div {
     width: 80px;
     height: 80px;
@@ -31,6 +35,11 @@ export const NLink = styled(NavLink)`
     width: 60px;
     height: 60px;
   }
+  p {
+    text-align: center;
+    padding-top: 4px;
+    font-weight: 600;
+  }
 `;
 
 interface IProps {
@@ -44,6 +53,19 @@ const Link: FC<IProps> = ({ link, Icon }) => {
       <div>
         <Icon />
       </div>
+      <p>
+        {link === "/price" ? (
+          <span>прайс</span>
+        ) : link === "/about" ? (
+          <span>
+            контакты
+            <br />
+            обратная связь
+          </span>
+        ) : (
+          <span>услуги</span>
+        )}
+      </p>
     </NLink>
   );
 };

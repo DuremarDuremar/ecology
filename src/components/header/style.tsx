@@ -13,13 +13,17 @@ export const Content = styled.header<{
   @media (max-width: 900px) {
     padding-top: 30px;
   }
-  div {
+  > div {
     display: flex;
     justify-content: space-around;
     flex-direction: ${(props) => (props.res900 ? "row" : "column-reverse")};
     margin-top: 20px;
     @media (max-width: 480px) {
       margin-top: 10px;
+    }
+    div {
+      display: flex;
+      column-gap: 20px;
     }
   }
   h1,
