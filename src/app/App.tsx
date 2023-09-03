@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import Layout from "../layout";
 import { dataCategory, priceData } from "../data";
