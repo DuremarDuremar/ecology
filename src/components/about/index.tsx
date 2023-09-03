@@ -18,15 +18,16 @@ const About = () => {
         </div>
       </Persons>
       <Send>
-        <Form>
+        <Form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={() => console.log(11)}
+        >
           <h4>Приглашаем к сотрудничеству</h4>
-          <input type="text" placeholder="Ваше имя" name="user_name" />
+          <input type="text" placeholder="Ваше имя" name="name" />
           <input type="tel" placeholder="Номер телефона" name="message" />
-          <input
-            type="email"
-            placeholder="Электронная почта"
-            name="user_email"
-          />
+          <input type="email" placeholder="Электронная почта" name="email" />
           <label htmlFor="ta">Ваша задача</label>
           <textarea name="" id="ta" cols={40} rows={6}></textarea>
           <button type="submit">Отправить</button>

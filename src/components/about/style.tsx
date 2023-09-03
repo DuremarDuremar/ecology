@@ -73,7 +73,12 @@ export const Form = styled.form`
     padding-left: 4px;
   }
   button {
-    background: #7490c7;
+    background: rgb(100, 100, 100)
+      radial-gradient(
+        circle at 0 0,
+        rgba(255, 255, 255, 0.65),
+        rgba(255, 255, 255, 0.35)
+      );
     border-radius: 3px;
     color: #fffdf5;
     margin-top: 20px;
@@ -84,7 +89,7 @@ export const Form = styled.form`
     width: 100%;
     padding: 10px 0;
     font-size: 12px;
-    border: 0.5px solid #7490c7;
+    border: 0.5px solid white;
     transition: all 0.7s ease-in-out;
     svg {
       width: 26px;
