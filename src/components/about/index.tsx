@@ -31,8 +31,8 @@ const About = () => {
           <input type="text" placeholder="Ваше имя" name="name" />
           <input type="tel" placeholder="Номер телефона" name="message" />
           <input type="email" placeholder="Электронная почта" name="email" />
-          <label htmlFor="ta">Ваша задача</label>
-          <textarea name="" id="ta" cols={40} rows={6}></textarea>
+          <label htmlFor="tat">Ваша задача</label>
+          <textarea name="" id="tat" cols={40} rows={6}></textarea>
           <button type="submit">Отправить</button>
         </Form>
       </Send>
