@@ -22,10 +22,10 @@ const About = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          onSubmit={(e) => {
-            e.preventDefault();
-            e.currentTarget.reset();
-          }}
+          // onSubmit={(e) => {
+          //   e.preventDefault();
+          //   e.currentTarget.reset();
+          // }}
         >
           <h4>Приглашаем к сотрудничеству</h4>
           <input type="hidden" name="form-name" value="contact" />
