@@ -19,21 +19,23 @@ const About = () => {
       </Persons>
       <Send>
         <Form
-          name="contact"
-          // method="POST"
-          data-netlify="true"
-          // onSubmit={(e) => {
-          //   e.preventDefault();
-          //   e.currentTarget.reset();
-          // }}
+        // name="contact"
+        // method="POST"
+        // data-netlify="true"
+        // onSubmit={(e) => {
+        //   e.preventDefault();
+        //   e.currentTarget.reset();
+        // }}
         >
-          <h4>Приглашаем к сотрудничеству</h4>
-          <input type="text" placeholder="Ваше имя" name="name" />
-          <input type="tel" placeholder="Номер телефона" name="message" />
-          <input type="email" placeholder="Электронная почта" name="email" />
-          <label htmlFor="tat">Ваша задача</label>
-          <textarea name="" id="tat" cols={40} rows={6}></textarea>
-          <button type="submit">Отправить</button>
+          <form name="contact" method="POST" data-netlify="true">
+            <h4>Приглашаем к сотрудничеству</h4>
+            <input type="text" placeholder="Ваше имя" name="name" />
+            <input type="tel" placeholder="Номер телефона" name="tel" />
+            <input type="email" placeholder="Электронная почта" name="email" />
+            <label htmlFor="mes">Ваша задача</label>
+            <textarea name="message" id="mes" cols={40} rows={6}></textarea>
+            <button type="submit">Отправить</button>
+          </form>
         </Form>
       </Send>
     </Content>
