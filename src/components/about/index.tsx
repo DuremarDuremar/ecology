@@ -20,12 +20,12 @@ const About = () => {
       <Send>
         <Form
           name="contact"
-          method="POST"
+          // method="POST"
           data-netlify="true"
-          onSubmit={(e) => {
-            e.preventDefault();
-            e.currentTarget.reset();
-          }}
+          // onSubmit={(e) => {
+          //   e.preventDefault();
+          //   e.currentTarget.reset();
+          // }}
         >
           <h4>Приглашаем к сотрудничеству</h4>
           <input type="text" placeholder="Ваше имя" name="name" />
