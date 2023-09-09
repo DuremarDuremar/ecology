@@ -20,8 +20,10 @@ const About = () => {
       <Send>
         <Form
           name="contact"
-          method="POST"
-          data-netlify="true"
+          method="post"
+          // name="contact"
+          // method="POST"
+          // data-netlify="true"
           // onSubmit={(e) => {
           //   e.preventDefault();
           //   e.currentTarget.reset();
