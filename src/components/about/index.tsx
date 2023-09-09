@@ -28,6 +28,7 @@ const About = () => {
           }}
         >
           <h4>Приглашаем к сотрудничеству</h4>
+          <input type="hidden" name="form-name" value="contact" />
           <input type="text" placeholder="Ваше имя" name="name" />
           <input type="tel" placeholder="Номер телефона" name="tel" />
           <input type="email" placeholder="Электронная почта" name="email" />
