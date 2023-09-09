@@ -25,15 +25,12 @@ export const Send = styled.div`
     padding-top: 30px;
   }
 `;
-export const Form = styled.div`
-  form {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 10px;
-  }
-
+export const Form = styled.form`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
   h4 {
     font-size: 20px;
     font-weight: 400;
