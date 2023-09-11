@@ -1,7 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import { Content, Persons, Send, Form } from "./style";
 
 const About = () => {
+  const history = useNavigate();
+  function handleSubmit(e: any) {
+    e.preventDefault();
+
+    history("/success");
+  }
+
   return (
     <Content>
       <Persons>
@@ -21,7 +30,7 @@ const About = () => {
         <Form
           name="contact"
           method="post"
-          action="/success/"
+          onSubmit={handleSubmit}
           // name="contact"
           // method="POST"
           // data-netlify="true"

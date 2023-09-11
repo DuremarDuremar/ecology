@@ -107,7 +107,7 @@ function App() {
               }
             />
 
-            {/* <Route path="success/" element={<p>344</p>} /> */}
+            <Route path="/success" element={<p>344</p>} />
 
             <Route
               path="*"
