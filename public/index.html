@@ -19,7 +19,13 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <!-- A little help for the Netlify bots if you're not using a SSG -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact"
+      netlify
+      netlify-honeypot="bot-field"
+      action="/submit"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="tel" name="tel" />
       <input type="email" name="email" />
