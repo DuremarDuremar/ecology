@@ -107,7 +107,7 @@ function App() {
               }
             />
 
-            <Route path="/submit" element={<p>344</p>} />
+            <Route path="/sub" element={<p>344</p>} />
 
             <Route
               path="*"
