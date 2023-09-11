@@ -21,6 +21,7 @@ const About = () => {
         <Form
           name="contact"
           method="post"
+          action="/submit"
           // name="contact"
           // method="POST"
           // data-netlify="true"
