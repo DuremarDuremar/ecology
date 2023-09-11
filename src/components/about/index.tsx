@@ -5,9 +5,7 @@ import { Content, Persons, Send, Form } from "./style";
 
 const About = () => {
   const history = useNavigate();
-  function handleSubmit(e: any) {
-    e.preventDefault();
-
+  function handleSubmit() {
     history("/success");
   }
 
